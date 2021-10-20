@@ -5,16 +5,23 @@
 4 - 1
 1 * 2
 4 ^ 2
+#parentheses to order
+(2 + 8) * (16 - 6)
+((3+2)^2) + 25 
 
 a <- 1
 b <- 2
 a + b
 A <- 3
 a + b - A
+#
+sqrt((A*3))
 
 round(3.1415)
 factorial(3)
 sqrt(9)
+#log based 10
+log10(100)
 
 factorial(round(2.0015) + 1)
 
@@ -35,14 +42,18 @@ foo
 factorial(foo)
 
 foo
-rm(foo)
+rm(foo) #rm to delete object
 foo
 
 pi
 pi <- 1
 pi
-rm(pi)
-pi
+rm(pi) #gets rid of the variable created
+pi #pi is back to normal
+
+a <- "The sun was high and bright"
+sub("sun", "moon",a)
+sub("sun", "star",)
 
 # Data structures
 
@@ -75,13 +86,13 @@ array(c(1, 2, 3, 4, 5, 6), dim = c(2, 2, 3))
 # Data types
 
 1 + 1
-3000000
-class(0.00001)
+3000000 #converts to exponential notation 
+class(0.00001) #returns "numeric"
 
 "hello"
 class("hello")
 
-"hello" + "world"
+"hello" + "world" #error because you can't add strings
 nchar("hello")
 paste("hello", "world")
 
@@ -103,27 +114,27 @@ class(fac)
 # Quiz
 # ---------------------
 x <- c(1, 2, 3)
-x
-"x"
+x    # 1 2 3
+"x"  #"x"
 # ---------------------
 
 # Your Turn
 # ---------------------
 vec <- c(1, "R", TRUE)
-class(vec)
+class(vec)  #"character"
 vec
 # ---------------------
 
 # Quiz
 # ---------
-c(5, "two")
-c(TRUE, "a")
-c(1, "TRUE")
-TRUE + 5
+c(5, "two")   #"5" "two"
+c(TRUE, "a")  #"TRUE" "a"
+c(1, "TRUE")  #"1" "TRUE"
+TRUE + 5      #6
 # ---------
 
-as.numeric("1")
-as.character(TRUE)
+as.numeric("1") # 1
+as.character(TRUE) 
 
 lst <- list(1, "R", TRUE)
 class(lst)
@@ -147,6 +158,6 @@ ndf
 
 names(ndf)
 names(nvec)
-names(nvec) <- c("uno", "dos", "tres") 
+names(nvec) <- c("uno", "dos", "tres") #changes names
 nvec
 
